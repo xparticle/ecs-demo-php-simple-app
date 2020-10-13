@@ -22,6 +22,7 @@
                 <?php
                         $myfile = fopen("/var/www/my-vol/date", "r") or die("");
                         echo fread($myfile,filesize("/var/www/my-vol/date"));
+                        echo getenv("SECRET")
                         fclose($myfile);
                 ?>
 
